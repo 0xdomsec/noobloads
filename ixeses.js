@@ -8,7 +8,7 @@ let username = document.querySelector('input[name="username"]')
 let password = 'Dom@1234'
 let data = `username=${username}&password=${password}`
 
-xhr.send();
+xhr.send(data);
 
 xhr.onload = function() {
   if (xhr.status != 200) {
